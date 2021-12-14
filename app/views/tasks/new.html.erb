@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="form-group">
+      <%= form_for(@task) do |f| %>
+      <div class="form-label">
+        <%= f.label :title %>
+      </div>
+      <div class="form-control">
+        <%= f.text_field :title %>
+      </div>
+      <div class="form-label">
+        <%= f.label :details %>
+      </div>
+      <div class="form-control">
+        <%= f.text_field :details %>
+      </div>
+      <div class="btn btn-primary mb-3">
+        <%= f.submit %>
+      </div>
+      <% end %>
+  </div>
+</div>
